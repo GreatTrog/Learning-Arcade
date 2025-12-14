@@ -65,6 +65,15 @@ export const APPS: AppLink[] = [
     color: 'cyan'
   },
   {
+    id: 'ratio-explorer',
+    title: 'Ratio Explorer',
+    url: 'https://ratio-explorer.vercel.app/',
+    category: 'Maths',
+    description: 'Explore and understand ratios through interactive visualisations and practice.',
+    icon: '⚖️',
+    color: 'orange'
+  },
+  {
     id: 'ddc-suggester',
     title: 'Librarian DDC Helper',
     url: 'https://greattrog.github.io/Primary-School-Librarian-DDC-Suggester/',
