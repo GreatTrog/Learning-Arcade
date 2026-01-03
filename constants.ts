@@ -1,4 +1,4 @@
-import { AppLink } from './types';
+import { AppLink, Category } from './types';
 
 export const APPS: AppLink[] = [
   {
@@ -11,11 +11,11 @@ export const APPS: AppLink[] = [
     color: 'red'
   },
   {
-    id: 'clause-explorer',
-    title: 'Clause Explorer',
+    id: 'grammar-explorer',
+    title: 'Grammar Explorer',
     url: 'https://clause-explorer.vercel.app/',
     category: 'English',
-    description: 'Explore the structure of sentences by identifying main and subordinate clauses.',
+    description: 'Master sentence structure, word classes, and punctuation in this comprehensive grammar guide.',
     icon: '🔍',
     color: 'red'
   },
@@ -35,7 +35,7 @@ export const APPS: AppLink[] = [
     category: 'Maths',
     description: 'Travel back to ancient Rome and master the art of Roman Numerals.',
     icon: '🏛️',
-    color: 'amber'
+    color: 'blue'
   },
   {
     id: 'rounding-rollercoaster',
@@ -44,7 +44,7 @@ export const APPS: AppLink[] = [
     category: 'Maths',
     description: 'Ride the highs and lows while learning how to round numbers correctly.',
     icon: '🎢',
-    color: 'purple'
+    color: 'blue'
   },
   {
     id: 'factor-bugs',
@@ -53,7 +53,7 @@ export const APPS: AppLink[] = [
     category: 'Maths',
     description: 'Catch the bugs by finding the factors! A creepy-crawly maths game.',
     icon: '🐞',
-    color: 'green'
+    color: 'blue'
   },
   {
     id: 'fraction-addition',
@@ -62,7 +62,7 @@ export const APPS: AppLink[] = [
     category: 'Maths',
     description: 'Master addition and subtraction of fractions with this helpful tool.',
     icon: '🍰',
-    color: 'cyan'
+    color: 'blue'
   },
   {
     id: 'ratio-explorer',
@@ -71,7 +71,7 @@ export const APPS: AppLink[] = [
     category: 'Maths',
     description: 'Explore and understand ratios through interactive visualisations and practice.',
     icon: '⚖️',
-    color: 'orange'
+    color: 'blue'
   },
   {
     id: 'ddc-suggester',
@@ -80,13 +80,13 @@ export const APPS: AppLink[] = [
     category: 'Admin',
     description: 'A handy tool for the library to help suggest Dewey Decimal Classifications.',
     icon: '📚',
-    color: 'slate'
+    color: 'orange'
   }
 ];
 
-export const CATEGORIES: { label: string; value: import('./types').Category; color: string }[] = [
+export const CATEGORIES: { label: string; value: Category; color: string }[] = [
   { label: 'All Apps', value: 'All', color: 'indigo' },
   { label: 'Maths Magic', value: 'Maths', color: 'blue' },
   { label: 'English Epic', value: 'English', color: 'red' },
-  { label: 'Tools', value: 'Admin', color: 'slate' },
+  { label: 'Tools', value: 'Admin', color: 'orange' },
 ];
