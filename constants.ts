@@ -20,6 +20,15 @@ export const APPS: AppLink[] = [
     color: 'red'
   },
   {
+    id: 'write-together',
+    title: 'WriteTogether',
+    url: 'https://write-together-web.vercel.app/',
+    category: 'English',
+    description: 'Collaborative writing tools and activities to help students build better sentences together.',
+    icon: '✍️',
+    color: 'red'
+  },
+  {
     id: 'ks2-maths',
     title: 'KS2 Arithmetic Practice',
     url: 'https://greattrog.github.io/ks2-maths-sats-arithmetic-practice/',
