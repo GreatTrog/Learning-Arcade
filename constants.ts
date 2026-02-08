@@ -13,7 +13,7 @@ export const APPS: AppLink[] = [
   {
     id: 'grammar-explorer',
     title: 'Grammar Explorer',
-    url: 'https://clause-explorer.vercel.app/',
+    url: 'https://grammar-explorer-6n6pejk2v-james-mansells-projects.vercel.app/',
     category: 'English',
     description: 'Master sentence structure, word classes, and punctuation in this comprehensive grammar guide.',
     icon: '🔍',
