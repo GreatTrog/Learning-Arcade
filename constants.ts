@@ -108,6 +108,15 @@ export const APPS: AppLink[] = [
     description: 'A handy tool for the library to help suggest Dewey Decimal Classifications.',
     icon: '📚',
     color: 'orange'
+  },
+  {
+    id: 'voltage-voyager',
+    title: 'Voltage Voyager',
+    url: 'https://voltage-voyager.vercel.app/',
+    category: 'Science',
+    description: 'Embark on an interactive journey to master the principles of electricity and circuits.',
+    icon: '⚡',
+    color: 'green'
   }
 ];
 
