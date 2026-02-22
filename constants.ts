@@ -117,6 +117,15 @@ export const APPS: AppLink[] = [
     description: 'Embark on an interactive journey to master the principles of electricity and circuits.',
     icon: '⚡',
     color: 'green'
+  },
+  {
+    id: 'line-graph-masterclass',
+    title: 'Line Graph Masterclass',
+    url: 'https://line-graph-masterclass.vercel.app/',
+    category: 'Science',
+    description: 'Master the art of plotting and interpreting line graphs with interactive data sets.',
+    icon: '📈',
+    color: 'green'
   }
 ];
 
