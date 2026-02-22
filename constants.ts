@@ -20,6 +20,15 @@ export const APPS: AppLink[] = [
     color: 'red'
   },
   {
+    id: 'grammar-stars',
+    title: 'Grammar Stars',
+    url: 'https://grammar-stars.vercel.app/',
+    category: 'English',
+    description: 'A 10-minute daily grammar boost to help you master key concepts.',
+    icon: '⭐',
+    color: 'red'
+  },
+  {
     id: 'write-together',
     title: 'WriteTogether',
     url: 'https://write-together-web.vercel.app/',
@@ -83,6 +92,15 @@ export const APPS: AppLink[] = [
     color: 'blue'
   },
   {
+    id: 'fairground-ticket-machine',
+    title: 'Fairground Ticket Machine',
+    url: 'https://fairground-ticket-machine.vercel.app/',
+    category: 'Maths',
+    description: 'Master money and change with this fairground-themed arithmetic challenge.',
+    icon: '🎟️',
+    color: 'blue'
+  },
+  {
     id: 'ddc-suggester',
     title: 'Librarian DDC Helper',
     url: 'https://greattrog.github.io/Primary-School-Librarian-DDC-Suggester/',
@@ -97,5 +115,6 @@ export const CATEGORIES: { label: string; value: Category; color: string }[] = [
   { label: 'All Apps', value: 'All', color: 'indigo' },
   { label: 'Maths Magic', value: 'Maths', color: 'blue' },
   { label: 'English Epic', value: 'English', color: 'red' },
+  { label: 'Science Spark', value: 'Science', color: 'green' },
   { label: 'Tools', value: 'Admin', color: 'orange' },
 ];
