@@ -126,6 +126,15 @@ export const APPS: AppLink[] = [
     description: 'Master the art of plotting and interpreting line graphs with interactive data sets.',
     icon: '📈',
     color: 'green'
+  },
+  {
+    id: 'roll-of-heroes',
+    title: 'The Roll of Heroes',
+    url: 'https://the-roll-of-heroes.vercel.app',
+    category: 'Admin',
+    description: 'A powerful tool for managing and tracking hero progress in your classroom.',
+    icon: '🦸',
+    color: 'orange'
   }
 ];
 
