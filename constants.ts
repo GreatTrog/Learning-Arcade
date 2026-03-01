@@ -132,7 +132,7 @@ export const APPS: AppLink[] = [
     title: 'The Roll of Heroes',
     url: 'https://the-roll-of-heroes.vercel.app',
     category: 'Admin',
-    description: 'A powerful tool for managing and tracking hero progress in your classroom.',
+    description: 'A tool for creating D&D character profiles',
     icon: '🦸',
     color: 'orange'
   }
