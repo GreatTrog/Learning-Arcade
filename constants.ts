@@ -135,6 +135,15 @@ export const APPS: AppLink[] = [
     description: 'A tool for creating D&D character profiles',
     icon: '🦸',
     color: 'orange'
+  },
+  {
+    id: 'sats-sync-timer',
+    title: 'SATs Sync Timer',
+    url: 'https://sats-sync-timer.vercel.app/',
+    category: 'Admin',
+    description: 'A versatile timer app with built-in one-click SATs timers.',
+    icon: '⏱️',
+    color: 'orange'
   }
 ];
 
