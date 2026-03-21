@@ -37,9 +37,14 @@ const AppCard: React.FC<AppCardProps> = ({ app }) => {
     <div
       className={`relative group rounded-3xl border-4 p-6 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl flex flex-col h-full ${themeClasses}`}
     >
-      <div className="absolute -top-6 -right-6 w-20 h-20 bg-white rounded-full flex items-center justify-center text-4xl shadow-md transform rotate-12 group-hover:rotate-0 transition-transform duration-300">
-        {app.icon}
+      <div className="absolute -top-6 -right-6 w-20 h-20 bg-white rounded-full flex items-center justify-center text-4xl shadow-md transform rotate-12 group-hover:rotate-0 transition-transform duration-300 overflow-hidden">
+        {app.image ? (
+          <img src={app.image} alt={app.title} className="w-full h-full object-contain p-2" />
+        ) : (
+          app.icon
+        )}
       </div>
+
 
       <div className="mt-4 mb-2">
         <span className="text-xs font-bold uppercase tracking-wider opacity-70 bg-white/50 px-2 py-1 rounded-lg">

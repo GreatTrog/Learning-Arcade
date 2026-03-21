@@ -7,5 +7,6 @@ export interface AppLink {
   category: Category;
   description: string;
   icon: string; // Emoji or icon name
+  image?: string; // Optional image URL
   color: string; // Tailwind color class base (e.g., 'blue', 'red')
 }

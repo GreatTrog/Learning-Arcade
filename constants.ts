@@ -35,6 +35,7 @@ export const APPS: AppLink[] = [
     category: 'English',
     description: 'Collaborative writing tools and activities to help students build better sentences together.',
     icon: '✍️',
+    image: '/write-together-logo.png',
     color: 'red'
   },
   {
@@ -44,6 +45,7 @@ export const APPS: AppLink[] = [
     category: 'Maths',
     description: 'Get ready for SATs with these rapid-fire arithmetic challenges.',
     icon: '➗',
+    image: '/ks2-arithmetic-logo.png',
     color: 'blue'
   },
   {
@@ -144,8 +146,19 @@ export const APPS: AppLink[] = [
     description: 'A versatile timer app with built-in one-click SATs timers.',
     icon: '⏱️',
     color: 'orange'
+  },
+  {
+    id: 'notescope',
+    title: 'NoteScope',
+    url: 'https://notescope.vercel.app/',
+    category: 'Admin',
+    description: 'Analyse any audio file to reveal its notes in real time, letting you explore music visually through waveforms, keys, and pitch data.',
+    icon: '🎵',
+    image: '/notescope-logo.png',
+    color: 'orange'
   }
 ];
+
 
 export const CATEGORIES: { label: string; value: Category; color: string }[] = [
   { label: 'All Apps', value: 'All', color: 'indigo' },
