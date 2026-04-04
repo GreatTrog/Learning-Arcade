@@ -156,6 +156,16 @@ export const APPS: AppLink[] = [
     icon: '🎵',
     image: '/notescope-logo.png',
     color: 'orange'
+  },
+  {
+    id: 'voices-of-discovery',
+    title: 'Voices of Discovery in Science',
+    url: 'https://voices-of-discovery.vercel.app/',
+    category: 'Science',
+    description: 'Explore the discoveries of the scientists who pioneered electricity.',
+    icon: '🔬',
+    image: '/voices-of-discovery-logo.png',
+    color: 'green'
   }
 ];
 
