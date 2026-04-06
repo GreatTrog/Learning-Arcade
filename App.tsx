@@ -38,7 +38,7 @@ const App: React.FC = () => {
             Learning <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">Arcade</span>
           </h1>
           <p className="text-xl md:text-2xl text-slate-600 max-w-2xl mx-auto font-medium">
-            Discover amazing games and tools to help you become a master of Maths and English!
+            Explore amazing games and tools to spark your curiosity and master every subject!
           </p>
         </header>
 

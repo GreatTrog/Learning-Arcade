@@ -1,4 +1,4 @@
-export type Category = 'All' | 'Maths' | 'English' | 'Admin' | 'Science';
+export type Category = 'All' | 'Maths' | 'English' | 'Admin' | 'Science' | 'History';
 
 export interface AppLink {
   id: string;

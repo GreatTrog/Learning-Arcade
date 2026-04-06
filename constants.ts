@@ -166,6 +166,16 @@ export const APPS: AppLink[] = [
     icon: '🔬',
     image: '/voices-of-discovery-logo.png',
     color: 'green'
+  },
+  {
+    id: 'easton-census-explorer',
+    title: 'Easton Census Explorer',
+    url: 'https://easton-census-explorer.vercel.app/',
+    category: 'History',
+    description: 'An interactive history app that lets children explore and compare Easton’s 1881, 1901, and 1921 census records through searchable people, households, occupations, and enquiry trails.',
+    icon: '📜',
+    image: '/easton-census-explorer-logo.png',
+    color: 'slate'
   }
 ];
 
@@ -175,5 +185,6 @@ export const CATEGORIES: { label: string; value: Category; color: string }[] = [
   { label: 'Maths Magic', value: 'Maths', color: 'blue' },
   { label: 'English Epic', value: 'English', color: 'red' },
   { label: 'Science Spark', value: 'Science', color: 'green' },
+  { label: 'History', value: 'History', color: 'slate' },
   { label: 'Tools', value: 'Admin', color: 'orange' },
 ];
