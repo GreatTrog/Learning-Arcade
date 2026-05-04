@@ -176,6 +176,15 @@ export const APPS: AppLink[] = [
     icon: '📜',
     image: '/easton-census-explorer-logo.png',
     color: 'slate'
+  },
+  {
+    id: 'fleet-and-fortune',
+    title: 'Fleet and Fortune',
+    url: 'https://fleet-and-fortune.vercel.app',
+    category: 'History',
+    description: 'A trading game in which up to six players compete to control a fleet of ships to trade goods and make the most gold.',
+    icon: '🚢',
+    color: 'slate'
   }
 ];
 
@@ -185,6 +194,6 @@ export const CATEGORIES: { label: string; value: Category; color: string }[] = [
   { label: 'Maths Magic', value: 'Maths', color: 'blue' },
   { label: 'English Epic', value: 'English', color: 'red' },
   { label: 'Science Spark', value: 'Science', color: 'green' },
-  { label: 'History', value: 'History', color: 'slate' },
+  { label: 'History Heroes', value: 'History', color: 'slate' },
   { label: 'Tools', value: 'Admin', color: 'orange' },
 ];
