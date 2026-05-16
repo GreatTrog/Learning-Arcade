@@ -185,6 +185,16 @@ export const APPS: AppLink[] = [
     description: 'A trading game in which up to six players compete to control a fleet of ships to trade goods and make the most gold.',
     icon: '🚢',
     color: 'slate'
+  },
+  {
+    id: 'voxel-cad',
+    title: 'Voxel CAD',
+    url: 'https://voxelcad-3d.vercel.app/',
+    category: 'Admin',
+    description: 'A simple Computer Aided Design app aimed at KS2 pupils.',
+    icon: '🧊',
+    image: '/voxel-cad-logo.png',
+    color: 'orange'
   }
 ];
 
