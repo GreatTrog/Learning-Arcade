@@ -7,66 +7,72 @@ interface AppCardProps {
 }
 
 const AppCard: React.FC<AppCardProps> = ({ app }) => {
-  // Map color strings to Tailwind classes safely
-  const colorMap: Record<string, string> = {
-    red: 'bg-red-100 text-red-600 border-red-200 hover:border-red-400 hover:shadow-red-200',
-    blue: 'bg-blue-100 text-blue-600 border-blue-200 hover:border-blue-400 hover:shadow-blue-200',
-    amber: 'bg-amber-100 text-amber-600 border-amber-200 hover:border-amber-400 hover:shadow-amber-200',
-    purple: 'bg-purple-100 text-purple-600 border-purple-200 hover:border-purple-400 hover:shadow-purple-200',
-    green: 'bg-green-100 text-green-600 border-green-200 hover:border-green-400 hover:shadow-green-200',
-    cyan: 'bg-cyan-100 text-cyan-600 border-cyan-200 hover:border-cyan-400 hover:shadow-cyan-200',
-    slate: 'bg-slate-100 text-slate-600 border-slate-200 hover:border-slate-400 hover:shadow-slate-200',
-    orange: 'bg-orange-100 text-orange-600 border-orange-200 hover:border-orange-400 hover:shadow-orange-200',
+  // Map color strings from constants.ts to our new brand design specs
+  const cardThemeMap: Record<string, { cardBg: string; textAccent: string }> = {
+    red: {
+      cardBg: 'bg-tintEnglish border-[#FFD6E8] hover:shadow-brandPink/5 hover:border-brandPink/30',
+      textAccent: 'text-brandPink',
+    },
+    blue: {
+      cardBg: 'bg-tintMaths border-[#D1E0FF] hover:shadow-brandBlue/5 hover:border-brandBlue/30',
+      textAccent: 'text-brandBlue',
+    },
+    green: {
+      cardBg: 'bg-tintScience border-[#C2F5F0] hover:shadow-brandTeal/5 hover:border-brandTeal/30',
+      textAccent: 'text-brandTeal',
+    },
+    slate: {
+      cardBg: 'bg-tintHistory border-[#E8D9FF] hover:shadow-brandPurple/5 hover:border-brandPurple/30',
+      textAccent: 'text-brandPurple',
+    },
+    orange: {
+      cardBg: 'bg-tintTools border-[#FFE4D6] hover:shadow-brandOrange/5 hover:border-brandOrange/30',
+      textAccent: 'text-brandOrange',
+    },
   };
 
-  const btnColorMap: Record<string, string> = {
-    red: 'bg-red-500 hover:bg-red-600',
-    blue: 'bg-blue-500 hover:bg-blue-600',
-    amber: 'bg-amber-500 hover:bg-amber-600',
-    purple: 'bg-purple-500 hover:bg-purple-600',
-    green: 'bg-green-500 hover:bg-green-600',
-    cyan: 'bg-cyan-500 hover:bg-cyan-600',
-    slate: 'bg-slate-500 hover:bg-slate-600',
-    orange: 'bg-orange-500 hover:bg-orange-600',
-  };
-
-  const themeClasses = colorMap[app.color] || colorMap.blue;
-  const btnClasses = btnColorMap[app.color] || btnColorMap.blue;
+  const currentTheme = cardThemeMap[app.color] || cardThemeMap.blue;
 
   return (
     <div
-      className={`relative group rounded-3xl border-4 p-6 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl flex flex-col h-full ${themeClasses}`}
+      className={`relative group rounded-[32px] border-2 p-7 transition-all duration-300 transform hover:-translate-y-1.5 flex flex-col h-full ${currentTheme.cardBg}`}
     >
-      <div className="absolute -top-6 -right-6 w-20 h-20 bg-white rounded-full flex items-center justify-center text-4xl shadow-md transform rotate-12 group-hover:rotate-0 transition-transform duration-300 overflow-hidden">
+      {/* Circular Badge for Game Icon / Logo */}
+      <div className="absolute top-6 right-6 w-14 h-14 bg-white rounded-full flex items-center justify-center text-3xl shadow-md border border-slate-50 overflow-hidden transform group-hover:scale-105 transition-transform duration-300">
         {app.image ? (
-          <img src={app.image} alt={app.title} className="w-full h-full object-contain p-2" />
+          <img src={app.image} alt={app.title} className="w-full h-full object-contain p-2.5" />
         ) : (
-          app.icon
+          <span className="p-1 select-none">{app.icon}</span>
         )}
       </div>
 
-
-      <div className="mt-4 mb-2">
-        <span className="text-xs font-bold uppercase tracking-wider opacity-70 bg-white/50 px-2 py-1 rounded-lg">
-          {app.category}
+      {/* Category Accent Label */}
+      <div className="mt-2 mb-1.5">
+        <span className={`text-[11px] font-black uppercase tracking-widest ${currentTheme.textAccent}`}>
+          {app.category === 'Admin' ? 'Tools' : app.category}
         </span>
       </div>
 
-      <h3 className="text-2xl font-black mb-3 leading-tight">{app.title}</h3>
+      {/* Card Title */}
+      <h3 className="text-2xl font-black text-brandNavy mb-3 leading-tight pr-12">
+        {app.title}
+      </h3>
 
-      <p className="text-sm font-medium opacity-80 mb-6 flex-grow leading-relaxed">
+      {/* Card Description */}
+      <p className="text-[14px] font-semibold text-midGrey mb-6 flex-grow leading-relaxed">
         {app.description}
       </p>
 
+      {/* Play Now CTA Button */}
       <a
         href={app.url}
         target="_blank"
         rel="noopener noreferrer"
-        className={`mt-auto w-full py-3 px-6 rounded-xl text-white font-bold text-lg shadow-lg flex items-center justify-center gap-2 transition-transform active:scale-95 ${btnClasses}`}
+        className="mt-auto w-full py-3 px-6 rounded-2xl bg-brandBlue hover:bg-brandPurple text-white font-bold text-base shadow-md hover:shadow-brandBlue/15 flex items-center justify-center gap-2 transition-all active:scale-95"
       >
-        <Gamepad2 size={24} />
+        <Gamepad2 size={20} />
         <span>Play Now</span>
-        <ExternalLink size={18} className="opacity-70" />
+        <ExternalLink size={15} className="opacity-70" />
       </a>
     </div>
   );

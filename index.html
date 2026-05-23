@@ -7,6 +7,39 @@
   <title>Learning Arcade</title>
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandNavy: '#071B52',
+            brandBlue: '#2F63FF',
+            brandPurple: '#7A4DFF',
+            brandPink: '#F53FA1',
+            brandOrange: '#FF7A3D',
+            brandYellow: '#FFBE33',
+            brandTeal: '#18C7D8',
+            brandAqua: '#7BE3E3',
+            brandLavender: '#B58DFF',
+            bgIce: '#EEF5FA',
+            cardWhite: '#FFFFFF',
+            lightGrey: '#E9EDF5',
+            midGrey: '#667085',
+            darkBg: '#041033',
+            // Soft category backgrounds
+            tintEnglish: '#FFF0F6',
+            tintMaths: '#EBF1FF',
+            tintScience: '#E6FAF8',
+            tintHistory: '#F7F2FF',
+            tintTools: '#FFF5F0',
+          },
+          fontFamily: {
+            fredoka: ['Fredoka', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -53,7 +86,7 @@
 </script>
 </head>
 
-<body class="bg-blue-50 text-slate-800 antialiased overflow-x-hidden">
+<body class="bg-[#F8FAFD] text-brandNavy font-fredoka antialiased overflow-x-hidden">
   <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
