@@ -189,7 +189,7 @@ export const APPS: AppLink[] = [
   {
     id: 'voxel-cad',
     title: 'Voxel CAD',
-    url: 'https://voxelcad-3d.vercel.app/',
+    url: 'https://voxelcad.learningarcade.uk',
     category: 'Admin',
     description: 'A simple Computer Aided Design app aimed at KS2 pupils.',
     icon: '🧊',
