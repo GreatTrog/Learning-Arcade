@@ -41,7 +41,7 @@ export const APPS: AppLink[] = [
   {
     id: 'ks2-maths',
     title: 'KS2 Arithmetic Practice',
-    url: 'https://greattrog.github.io/ks2-maths-sats-arithmetic-practice/',
+    url: 'https://ks2-arithmetic.learningarcade.uk/',
     category: 'Maths',
     description: 'Get ready for SATs with these rapid-fire arithmetic challenges.',
     icon: '➗',
