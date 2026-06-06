@@ -195,6 +195,16 @@ export const APPS: AppLink[] = [
     icon: '🧊',
     image: '/voxel-cad-logo.png',
     color: 'orange'
+  },
+  {
+    id: 'soundcue',
+    title: 'SoundCue',
+    url: 'https://soundcue.learningarcade.uk/',
+    category: 'Admin',
+    description: 'Cue every sound effect and song with confidence, keeping your school production running smoothly from start to finish.',
+    icon: '🎭',
+    image: 'https://soundcue.learningarcade.uk/favicon.png',
+    color: 'orange'
   }
 ];
 
