@@ -205,6 +205,16 @@ export const APPS: AppLink[] = [
     icon: '🎭',
     image: 'https://soundcue.learningarcade.uk/favicon.png',
     color: 'orange'
+  },
+  {
+    id: 'verto',
+    title: 'Verto: Image Converter',
+    url: 'https://verto.learningarcade.uk/',
+    category: 'Admin',
+    description: 'A fast and easy-to-use image conversion tool for your web and project needs.',
+    icon: '🖼️',
+    image: '/verto-logo.png',
+    color: 'orange'
   }
 ];
 
