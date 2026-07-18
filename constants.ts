@@ -105,7 +105,7 @@ export const APPS: AppLink[] = [
   {
     id: 'ddc-suggester',
     title: 'Librarian DDC Helper',
-    url: 'https://greattrog.github.io/Primary-School-Librarian-DDC-Suggester/',
+    url: 'https://library-helper.learningarcade.uk',
     category: 'Admin',
     description: 'A handy tool for the library to help suggest Dewey Decimal Classifications.',
     icon: '📚',
