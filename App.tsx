@@ -5,7 +5,8 @@ import AppCard from './components/AppCard';
 import Footer from './components/Footer';
 import { 
   Sparkles, Rocket, Search, Gamepad2, Calculator, BookOpen, 
-  Beaker, Compass, Wrench, GraduationCap, BarChart3, Shield, Award 
+  Beaker, Compass, Wrench, GraduationCap, BarChart3, Shield, Award,
+  Music
 } from 'lucide-react';
 
 const App: React.FC = () => {
@@ -31,6 +32,7 @@ const App: React.FC = () => {
       case 'Science': return <Beaker size={size} />;
       case 'History': return <Compass size={size} />;
       case 'Admin': return <Wrench size={size} />;
+      case 'Music': return <Music size={size} />;
       default: return <Sparkles size={size} />;
     }
   };
@@ -69,6 +71,7 @@ const App: React.FC = () => {
               if (cat.value === 'Science') selectedClass = 'bg-brandTeal text-white shadow-md shadow-brandTeal/20';
               if (cat.value === 'History') selectedClass = 'bg-brandPurple text-white shadow-md shadow-brandPurple/20';
               if (cat.value === 'Admin') selectedClass = 'bg-brandOrange text-white shadow-md shadow-brandOrange/20';
+              if (cat.value === 'Music') selectedClass = 'bg-brandLavender text-white shadow-md shadow-brandLavender/20';
               
               return (
                 <button

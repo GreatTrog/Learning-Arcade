@@ -29,6 +29,10 @@ const AppCard: React.FC<AppCardProps> = ({ app }) => {
       cardBg: 'bg-tintTools border-[#FFE4D6] hover:shadow-brandOrange/5 hover:border-brandOrange/30',
       textAccent: 'text-brandOrange',
     },
+    purple: {
+      cardBg: 'bg-tintMusic border-[#E8D9FF] hover:shadow-brandLavender/5 hover:border-brandLavender/30',
+      textAccent: 'text-brandLavender',
+    },
   };
 
   const currentTheme = cardThemeMap[app.color] || cardThemeMap.blue;

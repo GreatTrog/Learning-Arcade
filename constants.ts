@@ -215,6 +215,16 @@ export const APPS: AppLink[] = [
     icon: '🖼️',
     image: '/verto-logo.png',
     color: 'orange'
+  },
+  {
+    id: 'the-listening-room',
+    title: 'The Listening Room',
+    url: 'https://the-listening-room.learningarcade.uk',
+    category: 'Music',
+    description: 'Explore great music, sharpen your listening skills, and discover what makes each piece unique.',
+    icon: '🎵',
+    image: '/listening-room-logo.webp',
+    color: 'purple'
   }
 ];
 
@@ -226,4 +236,5 @@ export const CATEGORIES: { label: string; value: Category; color: string }[] = [
   { label: 'Science Spark', value: 'Science', color: 'green' },
   { label: 'History Heroes', value: 'History', color: 'slate' },
   { label: 'Tools', value: 'Admin', color: 'orange' },
+  { label: 'Music Makers', value: 'Music', color: 'purple' },
 ];
