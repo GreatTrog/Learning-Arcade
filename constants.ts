@@ -148,6 +148,16 @@ export const APPS: AppLink[] = [
     color: 'orange'
   },
   {
+    id: 'slate',
+    title: 'Slate',
+    url: 'https://slate.learningarcade.uk/',
+    category: 'Admin',
+    description: 'A fast, teacher-focused, multi-page interactive whiteboard.',
+    icon: '🖊️',
+    image: '/slate_logo.png',
+    color: 'orange'
+  },
+  {
     id: 'notescope',
     title: 'NoteScope',
     url: 'https://notescope.vercel.app/',
